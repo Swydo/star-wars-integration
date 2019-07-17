@@ -1,7 +1,7 @@
 const { describe, it, before } = require('mocha');
 const { expect } = require('chai');
 const nock = require('nock');
-const { connector } = require('./connector');
+const { connector, starshipsConnector } = require('./connector');
 const nockData = require('./connector.spec.json');
 
 describe('#connector', function () {
@@ -11,11 +11,10 @@ describe('#connector', function () {
 
     it('makes a valid request to SWAPI', async function () {
         const requestOptions = {
-            endpointId: 'star-wars:starships',
             page: 1,
         };
 
-        const result = await connector(requestOptions);
+        const result = await connector(requestOptions, { path: '/starships' });
 
         expect(result).to.have.nested.property('rows');
         expect(result).to.have.nested.property('rows[0].name', 'Executor');
@@ -24,7 +23,6 @@ describe('#connector', function () {
 
     it('makes a valid request to SWAPI with a filter', async function () {
         const requestOptions = {
-            endpointId: 'star-wars:starships',
             page: 1,
             filters: [
                 {
@@ -38,10 +36,24 @@ describe('#connector', function () {
             ],
         };
 
-        const result = await connector(requestOptions);
+        const result = await connector(requestOptions, { path: '/starships' });
 
         expect(result).to.have.nested.property('rows');
         expect(result).to.have.nested.property('rows[0].name', 'Executor');
         expect(result).to.have.nested.property('resultCount', 1);
+    });
+
+    describe('#starshipsConnector', function () {
+        it('makes a valid request to SWAPI', async function () {
+            const requestOptions = {
+                page: 1,
+            };
+
+            const result = await starshipsConnector(requestOptions);
+
+            expect(result).to.have.nested.property('rows');
+            expect(result).to.have.nested.property('rows[0].name', 'Executor');
+            expect(result).to.have.nested.property('resultCount', 37);
+        });
     });
 });
