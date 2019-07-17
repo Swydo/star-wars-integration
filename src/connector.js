@@ -3,14 +3,17 @@ const rp = require('request-promise-native');
 const baseUrl = 'https://swapi.co/api';
 
 async function connector({
-    endpointId, // This is the adapter key with endpoint key: `adapterKey:endpointKey`
     page, // The current page that is being requested
     filters, // An array of filter objects
-    // Other options are in the documentation, but not requered or useable for this connector
+    // Other options are in the documentation, but not required or usable for this connector
+}, {
+    // This is a property specific to the star-wars integration that allows this function to be used for multiple
+    // endpoints in SWAPI. By setting this variable this function can be reused for multiple endpoints.
+    path,
 }) {
     // Use the endpoint key to generate the right url
     // Alternatively we could have created a separate connector for each endpoint
-    const uri = `${baseUrl}/${endpointId.split(':')[1]}`;
+    const uri = `${baseUrl}${path}`;
 
     const requestOptions = {
         uri,
@@ -37,6 +40,9 @@ async function connector({
     return { rows, resultCount };
 }
 
+const starshipsConnector = request => connector(request, { path: '/starships' });
+
 module.exports = {
     connector,
+    starshipsConnector,
 };
