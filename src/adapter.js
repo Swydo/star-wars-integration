@@ -1,4 +1,4 @@
-const { connector } = require('./connector');
+const { starshipsConnector } = require('./connector');
 
 const SEARCH_FILTER_OPERATORS = [
     {
@@ -132,7 +132,7 @@ const endpoints = [
         pagination: {
             perPage: 10,
         },
-        connector,
+        connector: starshipsConnector,
         fields,
     },
 ];
