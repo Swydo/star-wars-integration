@@ -19,7 +19,7 @@ const rateLimit = {
 
 const fields = [
     {
-        key: 'name',
+        id: 'name',
         name: 'Name',
         type: 'String',
         isDimension: true,
@@ -34,7 +34,7 @@ const fields = [
         },
     },
     {
-        key: 'model',
+        id: 'model',
         name: 'Model',
         type: 'String',
         isDimension: true,
@@ -49,71 +49,71 @@ const fields = [
         },
     },
     {
-        key: 'starship_class',
+        id: 'starship_class',
         name: 'Starship Class',
         type: 'String',
         isDimension: true,
         isMetric: true,
     },
     {
-        key: 'manufacturer',
+        id: 'manufacturer',
         name: 'Manufacturer',
         type: 'String',
         isDimension: true,
         isMetric: true,
     },
     {
-        key: 'cost_in_credits',
+        id: 'cost_in_credits',
         name: 'Cost',
         type: 'Number',
         aggregate: 'average',
     },
     {
-        key: 'length',
+        id: 'length',
         name: 'Length',
         type: 'Number',
         aggregate: 'average',
     },
     {
-        key: 'crew',
+        id: 'crew',
         name: 'Crew',
         type: 'Number',
         formula: 'crew := 0',
         aggregate: 'average',
     },
     {
-        key: 'passengers',
+        id: 'passengers',
         name: 'Passengers',
         type: 'Number',
         formula: 'passengers := 0',
         aggregate: 'average',
     },
     {
-        key: 'max_atmosphering_speed',
+        id: 'max_atmosphering_speed',
         name: 'Max speed (atmospher)',
         type: 'Number',
         formula: 'max_atmosphering_speed := 0',
         aggregate: 'average',
     },
     {
-        key: 'hyperdrive_rating',
+        id: 'hyperdrive_rating',
         name: 'Hyperdrive rating',
         type: 'String',
     },
     {
-        key: 'MGLT',
+        id: 'MGLT',
         name: 'Megalight',
         type: 'String',
     },
     {
-        key: 'cargo_capacity',
+        id: 'cargo_capacity',
         name: 'Cargo capacity',
         type: 'Number',
         formula: 'cargo_capacity := 0',
         aggregate: 'average',
     },
     {
-        key: 'consumables',
+        id: 'consumables',
         name: 'Consumables',
         type: 'String',
     },
@@ -121,7 +121,7 @@ const fields = [
 
 const endpoints = [
     {
-        key: 'starships',
+        id: 'starships',
         isSelectable: true,
         dateRange: {
             enabled: false,
@@ -138,7 +138,7 @@ const endpoints = [
 ];
 
 const adapter = {
-    key: 'star-wars',
+    id: 'star-wars',
     authentication: {
         type: 'form',
         formOptions: {
