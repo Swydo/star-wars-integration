@@ -4,7 +4,7 @@
   "description": "A custom integration integrating SWAPI to @Swydo",
   "main": "src/index.js",
   "dependencies": {
-    "@swydo/custom-integrations": "0.2.9",
+    "@swydo/custom-integrations": "0.3.2",
     "request": "2.88.0",
     "request-promise-native": "1.0.7"
   },
