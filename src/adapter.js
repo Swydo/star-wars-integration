@@ -126,9 +126,6 @@ const endpoints = [
         dateRange: {
             enabled: false,
         },
-        comparison: {
-            enabled: false,
-        },
         pagination: {
             perPage: 10,
         },
@@ -152,7 +149,7 @@ const adapter = {
             ],
         },
     },
-    rateLimit,
+    rateLimits: [rateLimit],
     endpoints,
 };
 
