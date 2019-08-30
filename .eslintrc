@@ -1,5 +1,5 @@
 {
-  "extends": "airbnb",
+  "extends": "airbnb-base",
   "plugins": ["mocha-no-only"],
   "rules": {
     "indent": ["error", 4, { "SwitchCase": 1 }],
