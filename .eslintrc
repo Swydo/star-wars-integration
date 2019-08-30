@@ -2,6 +2,7 @@
   "extends": "airbnb-base",
   "plugins": ["mocha-no-only"],
   "rules": {
+    "arrow-parens": ["error", "as-needed", { "requireForBlockBody": true }],
     "indent": ["error", 4, { "SwitchCase": 1 }],
     "max-len": ["error", 120],
     "import/prefer-default-export": "off",
