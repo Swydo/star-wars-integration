@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.9](https://github.com/Swydo/star-wars-integration/compare/0.1.8...0.1.9) (2019-09-03)
+
+
+
 ### [0.1.8](https://github.com/Swydo/star-wars-integration/compare/0.1.7...0.1.8) (2019-08-27)
 
 
