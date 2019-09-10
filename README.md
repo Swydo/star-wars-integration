@@ -12,17 +12,30 @@ A custom integration integrating SWAPI to @Swydo
 
 ---
 
-<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-**Table of Contents**
 
--   [Install](#install)
-    -   [Compatibility](#Compatibility)
--   [Test](#test)
+- [Quick start](#quick-start)
+  - [Test](#test)
+  - [Run](#run)
+- [Slow start](#slow-start)
+  - [Clone and explore](#clone-and-explore)
+    - [Preparations](#preparations)
+    - [Structure](#structure)
+      - [Adapter](#adapter)
+      - [Endpoint](#endpoint)
+      - [Field](#field)
+    - [Connector](#connector)
+  - [Running on your computer](#running-on-your-computer)
+  - [Deploy the custom integration](#deploy-the-custom-integration)
 
-<!-- markdown-toc end -->
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ---
+
+
+
 
 ## Install
 
