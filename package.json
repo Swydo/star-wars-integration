@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "chai": "4.2.0",
+    "doctoc": "1.4.0",
     "eslint": "6.2.2",
     "eslint-config-airbnb-base": "14.0.0",
     "eslint-plugin-import": "2.18.2",
@@ -27,7 +28,8 @@
     "eslint": "eslint ./src",
     "mocha": "npx nyc --silent mocha \"src/**/*.spec.js\" --exit",
     "release": "standard-version",
-    "test": "npm run eslint && npm run validate && npm run mocha && npm run coverage-report && npm run coverage-check"
+    "test": "npm run eslint && npm run validate && npm run mocha && npm run coverage-report && npm run coverage-check",
+    "doctoc": "doctoc --notitle --github README.md"
   },
   "repository": {
     "type": "git",
