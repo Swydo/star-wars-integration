@@ -122,6 +122,7 @@ const fields = [
 const endpoints = [
     {
         id: 'starships',
+        name: 'Starships',
         isSelectable: true,
         dateRange: {
             enabled: false,
