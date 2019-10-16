@@ -1,6 +1,6 @@
 {
   "name": "star-wars-integration",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A custom integration integrating SWAPI to @Swydo",
   "main": "src/index.js",
   "dependencies": {
