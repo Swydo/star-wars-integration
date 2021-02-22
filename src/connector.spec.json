@@ -1,66 +1,62 @@
 [
   {
-    "scope": "https://swapi.co:443",
-    "method": "GET",
-    "path": "/api/starships?page=1",
-    "body": "",
-    "status": 301,
-    "response": "",
-    "rawHeaders": [
-      "Date",
-      "Mon, 24 Jun 2019 15:01:43 GMT",
-      "Content-Type",
-      "text/html; charset=utf-8",
-      "Transfer-Encoding",
-      "chunked",
-      "Connection",
-      "close",
-      "Set-Cookie",
-      "__cfduid=d5011548492b80648b01ef3d0426d70b11561388499; expires=Tue, 23-Jun-20 15:01:39 GMT; path=/; domain=.swapi.co; HttpOnly; Secure",
-      "X-Frame-Options",
-      "SAMEORIGIN",
-      "Location",
-      "https://swapi.co/api/starships/?page=1",
-      "Via",
-      "1.1 vegur",
-      "Expect-CT",
-      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-      "Server",
-      "cloudflare",
-      "CF-RAY",
-      "4ebf94082de62bfe-AMS"
-    ]
-  },
-  {
-    "scope": "https://swapi.co:443",
+    "scope": "https://swapi.dev:443",
     "method": "GET",
     "path": "/api/starships/?page=1",
     "body": "",
     "status": 200,
     "response": {
-      "count": 37,
-      "next": "https://swapi.co/api/starships/?page=2",
+      "count": 36,
+      "next": "http://swapi.dev/api/starships/?page=2",
       "previous": null,
       "results": [
         {
-          "name": "Executor",
-          "model": "Executor-class star dreadnought",
-          "manufacturer": "Kuat Drive Yards, Fondor Shipyards",
-          "cost_in_credits": "1143350000",
-          "length": "19000",
-          "max_atmosphering_speed": "n/a",
-          "crew": "279144",
-          "passengers": "38000",
-          "cargo_capacity": "250000000",
-          "consumables": "6 years",
+          "name": "CR90 corvette",
+          "model": "CR90 corvette",
+          "manufacturer": "Corellian Engineering Corporation",
+          "cost_in_credits": "3500000",
+          "length": "150",
+          "max_atmosphering_speed": "950",
+          "crew": "30-165",
+          "passengers": "600",
+          "cargo_capacity": "3000000",
+          "consumables": "1 year",
           "hyperdrive_rating": "2.0",
-          "MGLT": "40",
-          "starship_class": "Star dreadnought",
+          "MGLT": "60",
+          "starship_class": "corvette",
           "pilots": [],
-          "films": ["https://swapi.co/api/films/2/", "https://swapi.co/api/films/3/"],
-          "created": "2014-12-15T12:31:42.547000Z",
-          "edited": "2017-04-19T10:56:06.685592Z",
-          "url": "https://swapi.co/api/starships/15/"
+          "films": [
+            "http://swapi.dev/api/films/1/",
+            "http://swapi.dev/api/films/3/",
+            "http://swapi.dev/api/films/6/"
+          ],
+          "created": "2014-12-10T14:20:33.369000Z",
+          "edited": "2014-12-20T21:23:49.867000Z",
+          "url": "http://swapi.dev/api/starships/2/"
+        },
+        {
+          "name": "Star Destroyer",
+          "model": "Imperial I-class Star Destroyer",
+          "manufacturer": "Kuat Drive Yards",
+          "cost_in_credits": "150000000",
+          "length": "1,600",
+          "max_atmosphering_speed": "975",
+          "crew": "47,060",
+          "passengers": "n/a",
+          "cargo_capacity": "36000000",
+          "consumables": "2 years",
+          "hyperdrive_rating": "2.0",
+          "MGLT": "60",
+          "starship_class": "Star Destroyer",
+          "pilots": [],
+          "films": [
+            "http://swapi.dev/api/films/1/",
+            "http://swapi.dev/api/films/2/",
+            "http://swapi.dev/api/films/3/"
+          ],
+          "created": "2014-12-10T15:08:19.848000Z",
+          "edited": "2014-12-20T21:23:49.870000Z",
+          "url": "http://swapi.dev/api/starships/3/"
         },
         {
           "name": "Sentinel-class landing craft",
@@ -77,10 +73,12 @@
           "MGLT": "70",
           "starship_class": "landing craft",
           "pilots": [],
-          "films": ["https://swapi.co/api/films/1/"],
+          "films": [
+            "http://swapi.dev/api/films/1/"
+          ],
           "created": "2014-12-10T15:48:00.586000Z",
-          "edited": "2014-12-22T17:35:44.431407Z",
-          "url": "https://swapi.co/api/starships/5/"
+          "edited": "2014-12-20T21:23:49.873000Z",
+          "url": "http://swapi.dev/api/starships/5/"
         },
         {
           "name": "Death Star",
@@ -89,18 +87,20 @@
           "cost_in_credits": "1000000000000",
           "length": "120000",
           "max_atmosphering_speed": "n/a",
-          "crew": "342953",
-          "passengers": "843342",
+          "crew": "342,953",
+          "passengers": "843,342",
           "cargo_capacity": "1000000000000",
           "consumables": "3 years",
           "hyperdrive_rating": "4.0",
           "MGLT": "10",
           "starship_class": "Deep Space Mobile Battlestation",
           "pilots": [],
-          "films": ["https://swapi.co/api/films/1/"],
+          "films": [
+            "http://swapi.dev/api/films/1/"
+          ],
           "created": "2014-12-10T16:36:50.509000Z",
-          "edited": "2014-12-22T17:35:44.452589Z",
-          "url": "https://swapi.co/api/starships/9/"
+          "edited": "2014-12-20T21:26:24.783000Z",
+          "url": "http://swapi.dev/api/starships/9/"
         },
         {
           "name": "Millennium Falcon",
@@ -117,20 +117,19 @@
           "MGLT": "75",
           "starship_class": "Light freighter",
           "pilots": [
-            "https://swapi.co/api/people/13/",
-            "https://swapi.co/api/people/14/",
-            "https://swapi.co/api/people/25/",
-            "https://swapi.co/api/people/31/"
+            "http://swapi.dev/api/people/13/",
+            "http://swapi.dev/api/people/14/",
+            "http://swapi.dev/api/people/25/",
+            "http://swapi.dev/api/people/31/"
           ],
           "films": [
-            "https://swapi.co/api/films/2/",
-            "https://swapi.co/api/films/7/",
-            "https://swapi.co/api/films/3/",
-            "https://swapi.co/api/films/1/"
+            "http://swapi.dev/api/films/1/",
+            "http://swapi.dev/api/films/2/",
+            "http://swapi.dev/api/films/3/"
           ],
           "created": "2014-12-10T16:59:45.094000Z",
-          "edited": "2014-12-22T17:35:44.464156Z",
-          "url": "https://swapi.co/api/starships/10/"
+          "edited": "2014-12-20T21:23:49.880000Z",
+          "url": "http://swapi.dev/api/starships/10/"
         },
         {
           "name": "Y-wing",
@@ -148,13 +147,13 @@
           "starship_class": "assault starfighter",
           "pilots": [],
           "films": [
-            "https://swapi.co/api/films/2/",
-            "https://swapi.co/api/films/3/",
-            "https://swapi.co/api/films/1/"
+            "http://swapi.dev/api/films/1/",
+            "http://swapi.dev/api/films/2/",
+            "http://swapi.dev/api/films/3/"
           ],
           "created": "2014-12-12T11:00:39.817000Z",
-          "edited": "2014-12-22T17:35:44.479706Z",
-          "url": "https://swapi.co/api/starships/11/"
+          "edited": "2014-12-20T21:23:49.883000Z",
+          "url": "http://swapi.dev/api/starships/11/"
         },
         {
           "name": "X-wing",
@@ -171,19 +170,19 @@
           "MGLT": "100",
           "starship_class": "Starfighter",
           "pilots": [
-            "https://swapi.co/api/people/1/",
-            "https://swapi.co/api/people/9/",
-            "https://swapi.co/api/people/18/",
-            "https://swapi.co/api/people/19/"
+            "http://swapi.dev/api/people/1/",
+            "http://swapi.dev/api/people/9/",
+            "http://swapi.dev/api/people/18/",
+            "http://swapi.dev/api/people/19/"
           ],
           "films": [
-            "https://swapi.co/api/films/2/",
-            "https://swapi.co/api/films/3/",
-            "https://swapi.co/api/films/1/"
+            "http://swapi.dev/api/films/1/",
+            "http://swapi.dev/api/films/2/",
+            "http://swapi.dev/api/films/3/"
           ],
           "created": "2014-12-12T11:19:05.340000Z",
-          "edited": "2014-12-22T17:35:44.491233Z",
-          "url": "https://swapi.co/api/starships/12/"
+          "edited": "2014-12-20T21:23:49.886000Z",
+          "url": "http://swapi.dev/api/starships/12/"
         },
         {
           "name": "TIE Advanced x1",
@@ -199,141 +198,94 @@
           "hyperdrive_rating": "1.0",
           "MGLT": "105",
           "starship_class": "Starfighter",
-          "pilots": ["https://swapi.co/api/people/4/"],
-          "films": ["https://swapi.co/api/films/1/"],
-          "created": "2014-12-12T11:21:32.991000Z",
-          "edited": "2014-12-22T17:35:44.549047Z",
-          "url": "https://swapi.co/api/starships/13/"
-        },
-        {
-          "name": "Slave 1",
-          "model": "Firespray-31-class patrol and attack",
-          "manufacturer": "Kuat Systems Engineering",
-          "cost_in_credits": "unknown",
-          "length": "21.5",
-          "max_atmosphering_speed": "1000",
-          "crew": "1",
-          "passengers": "6",
-          "cargo_capacity": "70000",
-          "consumables": "1 month",
-          "hyperdrive_rating": "3.0",
-          "MGLT": "70",
-          "starship_class": "Patrol craft",
-          "pilots": ["https://swapi.co/api/people/22/"],
-          "films": ["https://swapi.co/api/films/2/", "https://swapi.co/api/films/5/"],
-          "created": "2014-12-15T13:00:56.332000Z",
-          "edited": "2014-12-22T17:35:44.716273Z",
-          "url": "https://swapi.co/api/starships/21/"
-        },
-        {
-          "name": "Imperial shuttle",
-          "model": "Lambda-class T-4a shuttle",
-          "manufacturer": "Sienar Fleet Systems",
-          "cost_in_credits": "240000",
-          "length": "20",
-          "max_atmosphering_speed": "850",
-          "crew": "6",
-          "passengers": "20",
-          "cargo_capacity": "80000",
-          "consumables": "2 months",
-          "hyperdrive_rating": "1.0",
-          "MGLT": "50",
-          "starship_class": "Armed government transport",
           "pilots": [
-            "https://swapi.co/api/people/1/",
-            "https://swapi.co/api/people/13/",
-            "https://swapi.co/api/people/14/"
+            "http://swapi.dev/api/people/4/"
           ],
-          "films": ["https://swapi.co/api/films/2/", "https://swapi.co/api/films/3/"],
-          "created": "2014-12-15T13:04:47.235000Z",
-          "edited": "2014-12-22T17:35:44.795405Z",
-          "url": "https://swapi.co/api/starships/22/"
+          "films": [
+            "http://swapi.dev/api/films/1/"
+          ],
+          "created": "2014-12-12T11:21:32.991000Z",
+          "edited": "2014-12-20T21:23:49.889000Z",
+          "url": "http://swapi.dev/api/starships/13/"
         },
         {
-          "name": "EF76 Nebulon-B escort frigate",
-          "model": "EF76 Nebulon-B escort frigate",
-          "manufacturer": "Kuat Drive Yards",
-          "cost_in_credits": "8500000",
-          "length": "300",
-          "max_atmosphering_speed": "800",
-          "crew": "854",
-          "passengers": "75",
-          "cargo_capacity": "6000000",
-          "consumables": "2 years",
+          "name": "Executor",
+          "model": "Executor-class star dreadnought",
+          "manufacturer": "Kuat Drive Yards, Fondor Shipyards",
+          "cost_in_credits": "1143350000",
+          "length": "19000",
+          "max_atmosphering_speed": "n/a",
+          "crew": "279,144",
+          "passengers": "38000",
+          "cargo_capacity": "250000000",
+          "consumables": "6 years",
           "hyperdrive_rating": "2.0",
           "MGLT": "40",
-          "starship_class": "Escort ship",
+          "starship_class": "Star dreadnought",
           "pilots": [],
-          "films": ["https://swapi.co/api/films/2/", "https://swapi.co/api/films/3/"],
-          "created": "2014-12-15T13:06:30.813000Z",
-          "edited": "2014-12-22T17:35:44.848329Z",
-          "url": "https://swapi.co/api/starships/23/"
+          "films": [
+            "http://swapi.dev/api/films/2/",
+            "http://swapi.dev/api/films/3/"
+          ],
+          "created": "2014-12-15T12:31:42.547000Z",
+          "edited": "2014-12-20T21:23:49.893000Z",
+          "url": "http://swapi.dev/api/starships/15/"
+        },
+        {
+          "name": "Rebel transport",
+          "model": "GR-75 medium transport",
+          "manufacturer": "Gallofree Yards, Inc.",
+          "cost_in_credits": "unknown",
+          "length": "90",
+          "max_atmosphering_speed": "650",
+          "crew": "6",
+          "passengers": "90",
+          "cargo_capacity": "19000000",
+          "consumables": "6 months",
+          "hyperdrive_rating": "4.0",
+          "MGLT": "20",
+          "starship_class": "Medium transport",
+          "pilots": [],
+          "films": [
+            "http://swapi.dev/api/films/2/",
+            "http://swapi.dev/api/films/3/"
+          ],
+          "created": "2014-12-15T12:34:52.264000Z",
+          "edited": "2014-12-20T21:23:49.895000Z",
+          "url": "http://swapi.dev/api/starships/17/"
         }
       ]
     },
     "rawHeaders": [
+      "Server",
+      "nginx/1.16.1",
       "Date",
-      "Mon, 24 Jun 2019 15:01:50 GMT",
+      "Mon, 22 Feb 2021 14:25:00 GMT",
       "Content-Type",
       "application/json",
       "Transfer-Encoding",
       "chunked",
       "Connection",
       "close",
-      "Set-Cookie",
-      "__cfduid=d2e597b2a97a515e714c615bafb7911e81561388503; expires=Tue, 23-Jun-20 15:01:43 GMT; path=/; domain=.swapi.co; HttpOnly; Secure",
-      "Allow",
-      "GET, HEAD, OPTIONS",
-      "X-Frame-Options",
-      "SAMEORIGIN",
       "Vary",
       "Accept, Cookie",
-      "Etag",
-      "\"9d11d1ceef86e0dc36273bd093bf29f7\"",
-      "Via",
-      "1.1 vegur",
-      "Expect-CT",
-      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-      "Server",
-      "cloudflare",
-      "CF-RAY",
-      "4ebf9424ae9bc79d-AMS"
-    ]
-  },
-  {
-    "scope": "https://swapi.co:443",
-    "method": "GET",
-    "path": "/api/starships?page=1&search=Executor",
-    "body": "",
-    "status": 301,
-    "response": "",
-    "rawHeaders": [
-      "Date",
-      "Mon, 24 Jun 2019 15:01:54 GMT",
-      "Content-Type",
-      "text/html; charset=utf-8",
-      "Transfer-Encoding",
-      "chunked",
-      "Connection",
-      "close",
-      "Set-Cookie",
-      "__cfduid=def0a41c785549c06036c36657ef3eddb1561388510; expires=Tue, 23-Jun-20 15:01:50 GMT; path=/; domain=.swapi.co; HttpOnly; Secure",
       "X-Frame-Options",
       "SAMEORIGIN",
-      "Location",
-      "https://swapi.co/api/starships/?page=1&search=Executor",
-      "Via",
-      "1.1 vegur",
-      "Expect-CT",
-      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-      "Server",
-      "cloudflare",
-      "CF-RAY",
-      "4ebf944d3bd4c779-AMS"
-    ]
+      "ETag",
+      "\"4defd838674d3b6cebdaddae154cb2d8\"",
+      "Allow",
+      "GET, HEAD, OPTIONS",
+      "Strict-Transport-Security",
+      "max-age=15768000"
+    ],
+    "reqheaders": {
+      "host": "swapi.dev",
+      "accept": "application/json"
+    },
+    "responseIsBinary": false
   },
   {
-    "scope": "https://swapi.co:443",
+    "scope": "https://swapi.dev:443",
     "method": "GET",
     "path": "/api/starships/?page=1&search=Executor",
     "body": "",
@@ -350,7 +302,7 @@
           "cost_in_credits": "1143350000",
           "length": "19000",
           "max_atmosphering_speed": "n/a",
-          "crew": "279144",
+          "crew": "279,144",
           "passengers": "38000",
           "cargo_capacity": "250000000",
           "consumables": "6 years",
@@ -358,104 +310,98 @@
           "MGLT": "40",
           "starship_class": "Star dreadnought",
           "pilots": [],
-          "films": ["https://swapi.co/api/films/2/", "https://swapi.co/api/films/3/"],
+          "films": [
+            "http://swapi.dev/api/films/2/",
+            "http://swapi.dev/api/films/3/"
+          ],
           "created": "2014-12-15T12:31:42.547000Z",
-          "edited": "2017-04-19T10:56:06.685592Z",
-          "url": "https://swapi.co/api/starships/15/"
+          "edited": "2014-12-20T21:23:49.893000Z",
+          "url": "http://swapi.dev/api/starships/15/"
         }
       ]
     },
     "rawHeaders": [
+      "Server",
+      "nginx/1.16.1",
       "Date",
-      "Mon, 24 Jun 2019 15:01:57 GMT",
+      "Mon, 22 Feb 2021 14:27:11 GMT",
       "Content-Type",
       "application/json",
       "Transfer-Encoding",
       "chunked",
       "Connection",
       "close",
-      "Set-Cookie",
-      "__cfduid=d7cbf2af26df9c2b03404e3fa5c9a90111561388514; expires=Tue, 23-Jun-20 15:01:54 GMT; path=/; domain=.swapi.co; HttpOnly; Secure",
-      "Allow",
-      "GET, HEAD, OPTIONS",
-      "X-Frame-Options",
-      "SAMEORIGIN",
       "Vary",
       "Accept, Cookie",
-      "Etag",
-      "\"e1edeb4e65049298259e8bd7efb1a51a\"",
-      "Via",
-      "1.1 vegur",
-      "Expect-CT",
-      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-      "Server",
-      "cloudflare",
-      "CF-RAY",
-      "4ebf94680f84c85b-AMS"
-    ]
-  },
-  {
-    "scope": "https://swapi.co:443",
-    "method": "GET",
-    "path": "/api/starships?page=1",
-    "body": "",
-    "status": 301,
-    "response": "",
-    "rawHeaders": [
-      "Date",
-      "Mon, 24 Jun 2019 15:01:43 GMT",
-      "Content-Type",
-      "text/html; charset=utf-8",
-      "Transfer-Encoding",
-      "chunked",
-      "Connection",
-      "close",
-      "Set-Cookie",
-      "__cfduid=d5011548492b80648b01ef3d0426d70b11561388499; expires=Tue, 23-Jun-20 15:01:39 GMT; path=/; domain=.swapi.co; HttpOnly; Secure",
       "X-Frame-Options",
       "SAMEORIGIN",
-      "Location",
-      "https://swapi.co/api/starships/?page=1",
-      "Via",
-      "1.1 vegur",
-      "Expect-CT",
-      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-      "Server",
-      "cloudflare",
-      "CF-RAY",
-      "4ebf94082de62bfe-AMS"
-    ]
+      "ETag",
+      "\"a80c092260f4fe0145cdeba993fbe4dc\"",
+      "Allow",
+      "GET, HEAD, OPTIONS",
+      "Strict-Transport-Security",
+      "max-age=15768000"
+    ],
+    "responseIsBinary": false
   },
   {
-    "scope": "https://swapi.co:443",
+    "scope": "https://swapi.dev:443",
     "method": "GET",
     "path": "/api/starships/?page=1",
     "body": "",
     "status": 200,
     "response": {
-      "count": 37,
-      "next": "https://swapi.co/api/starships/?page=2",
+      "count": 36,
+      "next": "http://swapi.dev/api/starships/?page=2",
       "previous": null,
       "results": [
         {
-          "name": "Executor",
-          "model": "Executor-class star dreadnought",
-          "manufacturer": "Kuat Drive Yards, Fondor Shipyards",
-          "cost_in_credits": "1143350000",
-          "length": "19000",
-          "max_atmosphering_speed": "n/a",
-          "crew": "279144",
-          "passengers": "38000",
-          "cargo_capacity": "250000000",
-          "consumables": "6 years",
+          "name": "CR90 corvette",
+          "model": "CR90 corvette",
+          "manufacturer": "Corellian Engineering Corporation",
+          "cost_in_credits": "3500000",
+          "length": "150",
+          "max_atmosphering_speed": "950",
+          "crew": "30-165",
+          "passengers": "600",
+          "cargo_capacity": "3000000",
+          "consumables": "1 year",
           "hyperdrive_rating": "2.0",
-          "MGLT": "40",
-          "starship_class": "Star dreadnought",
+          "MGLT": "60",
+          "starship_class": "corvette",
           "pilots": [],
-          "films": ["https://swapi.co/api/films/2/", "https://swapi.co/api/films/3/"],
-          "created": "2014-12-15T12:31:42.547000Z",
-          "edited": "2017-04-19T10:56:06.685592Z",
-          "url": "https://swapi.co/api/starships/15/"
+          "films": [
+            "http://swapi.dev/api/films/1/",
+            "http://swapi.dev/api/films/3/",
+            "http://swapi.dev/api/films/6/"
+          ],
+          "created": "2014-12-10T14:20:33.369000Z",
+          "edited": "2014-12-20T21:23:49.867000Z",
+          "url": "http://swapi.dev/api/starships/2/"
+        },
+        {
+          "name": "Star Destroyer",
+          "model": "Imperial I-class Star Destroyer",
+          "manufacturer": "Kuat Drive Yards",
+          "cost_in_credits": "150000000",
+          "length": "1,600",
+          "max_atmosphering_speed": "975",
+          "crew": "47,060",
+          "passengers": "n/a",
+          "cargo_capacity": "36000000",
+          "consumables": "2 years",
+          "hyperdrive_rating": "2.0",
+          "MGLT": "60",
+          "starship_class": "Star Destroyer",
+          "pilots": [],
+          "films": [
+            "http://swapi.dev/api/films/1/",
+            "http://swapi.dev/api/films/2/",
+            "http://swapi.dev/api/films/3/"
+          ],
+          "created": "2014-12-10T15:08:19.848000Z",
+          "edited": "2014-12-20T21:23:49.870000Z",
+          "url": "http://swapi.dev/api/starships/3/"
         },
         {
           "name": "Sentinel-class landing craft",
@@ -472,10 +418,12 @@
           "MGLT": "70",
           "starship_class": "landing craft",
           "pilots": [],
-          "films": ["https://swapi.co/api/films/1/"],
+          "films": [
+            "http://swapi.dev/api/films/1/"
+          ],
           "created": "2014-12-10T15:48:00.586000Z",
-          "edited": "2014-12-22T17:35:44.431407Z",
-          "url": "https://swapi.co/api/starships/5/"
+          "edited": "2014-12-20T21:23:49.873000Z",
+          "url": "http://swapi.dev/api/starships/5/"
         },
         {
           "name": "Death Star",
@@ -484,18 +432,20 @@
           "cost_in_credits": "1000000000000",
           "length": "120000",
           "max_atmosphering_speed": "n/a",
-          "crew": "342953",
-          "passengers": "843342",
+          "crew": "342,953",
+          "passengers": "843,342",
           "cargo_capacity": "1000000000000",
           "consumables": "3 years",
           "hyperdrive_rating": "4.0",
           "MGLT": "10",
           "starship_class": "Deep Space Mobile Battlestation",
           "pilots": [],
-          "films": ["https://swapi.co/api/films/1/"],
+          "films": [
+            "http://swapi.dev/api/films/1/"
+          ],
           "created": "2014-12-10T16:36:50.509000Z",
-          "edited": "2014-12-22T17:35:44.452589Z",
-          "url": "https://swapi.co/api/starships/9/"
+          "edited": "2014-12-20T21:26:24.783000Z",
+          "url": "http://swapi.dev/api/starships/9/"
         },
         {
           "name": "Millennium Falcon",
@@ -512,20 +462,19 @@
           "MGLT": "75",
           "starship_class": "Light freighter",
           "pilots": [
-            "https://swapi.co/api/people/13/",
-            "https://swapi.co/api/people/14/",
-            "https://swapi.co/api/people/25/",
-            "https://swapi.co/api/people/31/"
+            "http://swapi.dev/api/people/13/",
+            "http://swapi.dev/api/people/14/",
+            "http://swapi.dev/api/people/25/",
+            "http://swapi.dev/api/people/31/"
           ],
           "films": [
-            "https://swapi.co/api/films/2/",
-            "https://swapi.co/api/films/7/",
-            "https://swapi.co/api/films/3/",
-            "https://swapi.co/api/films/1/"
+            "http://swapi.dev/api/films/1/",
+            "http://swapi.dev/api/films/2/",
+            "http://swapi.dev/api/films/3/"
           ],
           "created": "2014-12-10T16:59:45.094000Z",
-          "edited": "2014-12-22T17:35:44.464156Z",
-          "url": "https://swapi.co/api/starships/10/"
+          "edited": "2014-12-20T21:23:49.880000Z",
+          "url": "http://swapi.dev/api/starships/10/"
         },
         {
           "name": "Y-wing",
@@ -543,13 +492,13 @@
           "starship_class": "assault starfighter",
           "pilots": [],
           "films": [
-            "https://swapi.co/api/films/2/",
-            "https://swapi.co/api/films/3/",
-            "https://swapi.co/api/films/1/"
+            "http://swapi.dev/api/films/1/",
+            "http://swapi.dev/api/films/2/",
+            "http://swapi.dev/api/films/3/"
           ],
           "created": "2014-12-12T11:00:39.817000Z",
-          "edited": "2014-12-22T17:35:44.479706Z",
-          "url": "https://swapi.co/api/starships/11/"
+          "edited": "2014-12-20T21:23:49.883000Z",
+          "url": "http://swapi.dev/api/starships/11/"
         },
         {
           "name": "X-wing",
@@ -566,19 +515,19 @@
           "MGLT": "100",
           "starship_class": "Starfighter",
           "pilots": [
-            "https://swapi.co/api/people/1/",
-            "https://swapi.co/api/people/9/",
-            "https://swapi.co/api/people/18/",
-            "https://swapi.co/api/people/19/"
+            "http://swapi.dev/api/people/1/",
+            "http://swapi.dev/api/people/9/",
+            "http://swapi.dev/api/people/18/",
+            "http://swapi.dev/api/people/19/"
           ],
           "films": [
-            "https://swapi.co/api/films/2/",
-            "https://swapi.co/api/films/3/",
-            "https://swapi.co/api/films/1/"
+            "http://swapi.dev/api/films/1/",
+            "http://swapi.dev/api/films/2/",
+            "http://swapi.dev/api/films/3/"
           ],
           "created": "2014-12-12T11:19:05.340000Z",
-          "edited": "2014-12-22T17:35:44.491233Z",
-          "url": "https://swapi.co/api/starships/12/"
+          "edited": "2014-12-20T21:23:49.886000Z",
+          "url": "http://swapi.dev/api/starships/12/"
         },
         {
           "name": "TIE Advanced x1",
@@ -594,137 +543,86 @@
           "hyperdrive_rating": "1.0",
           "MGLT": "105",
           "starship_class": "Starfighter",
-          "pilots": ["https://swapi.co/api/people/4/"],
-          "films": ["https://swapi.co/api/films/1/"],
-          "created": "2014-12-12T11:21:32.991000Z",
-          "edited": "2014-12-22T17:35:44.549047Z",
-          "url": "https://swapi.co/api/starships/13/"
-        },
-        {
-          "name": "Slave 1",
-          "model": "Firespray-31-class patrol and attack",
-          "manufacturer": "Kuat Systems Engineering",
-          "cost_in_credits": "unknown",
-          "length": "21.5",
-          "max_atmosphering_speed": "1000",
-          "crew": "1",
-          "passengers": "6",
-          "cargo_capacity": "70000",
-          "consumables": "1 month",
-          "hyperdrive_rating": "3.0",
-          "MGLT": "70",
-          "starship_class": "Patrol craft",
-          "pilots": ["https://swapi.co/api/people/22/"],
-          "films": ["https://swapi.co/api/films/2/", "https://swapi.co/api/films/5/"],
-          "created": "2014-12-15T13:00:56.332000Z",
-          "edited": "2014-12-22T17:35:44.716273Z",
-          "url": "https://swapi.co/api/starships/21/"
-        },
-        {
-          "name": "Imperial shuttle",
-          "model": "Lambda-class T-4a shuttle",
-          "manufacturer": "Sienar Fleet Systems",
-          "cost_in_credits": "240000",
-          "length": "20",
-          "max_atmosphering_speed": "850",
-          "crew": "6",
-          "passengers": "20",
-          "cargo_capacity": "80000",
-          "consumables": "2 months",
-          "hyperdrive_rating": "1.0",
-          "MGLT": "50",
-          "starship_class": "Armed government transport",
           "pilots": [
-            "https://swapi.co/api/people/1/",
-            "https://swapi.co/api/people/13/",
-            "https://swapi.co/api/people/14/"
+            "http://swapi.dev/api/people/4/"
           ],
-          "films": ["https://swapi.co/api/films/2/", "https://swapi.co/api/films/3/"],
-          "created": "2014-12-15T13:04:47.235000Z",
-          "edited": "2014-12-22T17:35:44.795405Z",
-          "url": "https://swapi.co/api/starships/22/"
+          "films": [
+            "http://swapi.dev/api/films/1/"
+          ],
+          "created": "2014-12-12T11:21:32.991000Z",
+          "edited": "2014-12-20T21:23:49.889000Z",
+          "url": "http://swapi.dev/api/starships/13/"
         },
         {
-          "name": "EF76 Nebulon-B escort frigate",
-          "model": "EF76 Nebulon-B escort frigate",
-          "manufacturer": "Kuat Drive Yards",
-          "cost_in_credits": "8500000",
-          "length": "300",
-          "max_atmosphering_speed": "800",
-          "crew": "854",
-          "passengers": "75",
-          "cargo_capacity": "6000000",
-          "consumables": "2 years",
+          "name": "Executor",
+          "model": "Executor-class star dreadnought",
+          "manufacturer": "Kuat Drive Yards, Fondor Shipyards",
+          "cost_in_credits": "1143350000",
+          "length": "19000",
+          "max_atmosphering_speed": "n/a",
+          "crew": "279,144",
+          "passengers": "38000",
+          "cargo_capacity": "250000000",
+          "consumables": "6 years",
           "hyperdrive_rating": "2.0",
           "MGLT": "40",
-          "starship_class": "Escort ship",
+          "starship_class": "Star dreadnought",
           "pilots": [],
-          "films": ["https://swapi.co/api/films/2/", "https://swapi.co/api/films/3/"],
-          "created": "2014-12-15T13:06:30.813000Z",
-          "edited": "2014-12-22T17:35:44.848329Z",
-          "url": "https://swapi.co/api/starships/23/"
+          "films": [
+            "http://swapi.dev/api/films/2/",
+            "http://swapi.dev/api/films/3/"
+          ],
+          "created": "2014-12-15T12:31:42.547000Z",
+          "edited": "2014-12-20T21:23:49.893000Z",
+          "url": "http://swapi.dev/api/starships/15/"
+        },
+        {
+          "name": "Rebel transport",
+          "model": "GR-75 medium transport",
+          "manufacturer": "Gallofree Yards, Inc.",
+          "cost_in_credits": "unknown",
+          "length": "90",
+          "max_atmosphering_speed": "650",
+          "crew": "6",
+          "passengers": "90",
+          "cargo_capacity": "19000000",
+          "consumables": "6 months",
+          "hyperdrive_rating": "4.0",
+          "MGLT": "20",
+          "starship_class": "Medium transport",
+          "pilots": [],
+          "films": [
+            "http://swapi.dev/api/films/2/",
+            "http://swapi.dev/api/films/3/"
+          ],
+          "created": "2014-12-15T12:34:52.264000Z",
+          "edited": "2014-12-20T21:23:49.895000Z",
+          "url": "http://swapi.dev/api/starships/17/"
         }
       ]
     },
     "rawHeaders": [
+      "Server",
+      "nginx/1.16.1",
       "Date",
-      "Mon, 24 Jun 2019 15:01:50 GMT",
+      "Mon, 22 Feb 2021 14:27:26 GMT",
       "Content-Type",
       "application/json",
       "Transfer-Encoding",
       "chunked",
       "Connection",
       "close",
-      "Set-Cookie",
-      "__cfduid=d2e597b2a97a515e714c615bafb7911e81561388503; expires=Tue, 23-Jun-20 15:01:43 GMT; path=/; domain=.swapi.co; HttpOnly; Secure",
-      "Allow",
-      "GET, HEAD, OPTIONS",
-      "X-Frame-Options",
-      "SAMEORIGIN",
       "Vary",
       "Accept, Cookie",
-      "Etag",
-      "\"9d11d1ceef86e0dc36273bd093bf29f7\"",
-      "Via",
-      "1.1 vegur",
-      "Expect-CT",
-      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-      "Server",
-      "cloudflare",
-      "CF-RAY",
-      "4ebf9424ae9bc79d-AMS"
-    ]
-  },
-  {
-    "scope": "https://swapi.co:443",
-    "method": "GET",
-    "path": "/api/starships?page=1&search=Executor",
-    "body": "",
-    "status": 301,
-    "response": "",
-    "rawHeaders": [
-      "Date",
-      "Mon, 24 Jun 2019 15:01:54 GMT",
-      "Content-Type",
-      "text/html; charset=utf-8",
-      "Transfer-Encoding",
-      "chunked",
-      "Connection",
-      "close",
-      "Set-Cookie",
-      "__cfduid=def0a41c785549c06036c36657ef3eddb1561388510; expires=Tue, 23-Jun-20 15:01:50 GMT; path=/; domain=.swapi.co; HttpOnly; Secure",
       "X-Frame-Options",
       "SAMEORIGIN",
-      "Location",
-      "https://swapi.co/api/starships/?page=1&search=Executor",
-      "Via",
-      "1.1 vegur",
-      "Expect-CT",
-      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-      "Server",
-      "cloudflare",
-      "CF-RAY",
-      "4ebf944d3bd4c779-AMS"
-    ]
+      "ETag",
+      "\"4defd838674d3b6cebdaddae154cb2d8\"",
+      "Allow",
+      "GET, HEAD, OPTIONS",
+      "Strict-Transport-Security",
+      "max-age=15768000"
+    ],
+    "responseIsBinary": false
   }
 ]

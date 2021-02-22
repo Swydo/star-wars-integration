@@ -17,8 +17,8 @@ describe('#connector', function () {
         const result = await connector(requestOptions, { path: '/starships/' });
 
         expect(result).to.have.nested.property('rows');
-        expect(result).to.have.nested.property('rows[0].name', 'Executor');
-        expect(result).to.have.nested.property('resultCount', 37);
+        expect(result).to.have.nested.property('rows[0].name', 'CR90 corvette');
+        expect(result).to.have.nested.property('resultCount', 36);
     });
 
     it('makes a valid request to SWAPI with a filter', async function () {
@@ -52,8 +52,8 @@ describe('#connector', function () {
             const result = await starshipsConnector(requestOptions);
 
             expect(result).to.have.nested.property('rows');
-            expect(result).to.have.nested.property('rows[0].name', 'Executor');
-            expect(result).to.have.nested.property('resultCount', 37);
+            expect(result).to.have.nested.property('rows[0].name', 'CR90 corvette');
+            expect(result).to.have.nested.property('resultCount', 36);
         });
     });
 });
