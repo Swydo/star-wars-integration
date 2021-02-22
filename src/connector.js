@@ -1,6 +1,6 @@
 const rp = require('request-promise-native');
 
-const baseUrl = 'https://swapi.co/api';
+const baseUrl = 'https://swapi.dev/api';
 
 async function connector({
     page, // The current page that is being requested
@@ -40,7 +40,7 @@ async function connector({
     return { rows, resultCount };
 }
 
-const starshipsConnector = request => connector(request, { path: '/starships' });
+const starshipsConnector = request => connector(request, { path: '/starships/' });
 
 module.exports = {
     connector,
