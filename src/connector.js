@@ -40,7 +40,7 @@ async function connector({
     return { rows, resultCount };
 }
 
-const starshipsConnector = request => connector(request, { path: '/starships' });
+const starshipsConnector = request => connector(request, { path: '/starships/' });
 
 module.exports = {
     connector,

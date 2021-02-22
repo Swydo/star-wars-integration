@@ -14,7 +14,7 @@ describe('#connector', function () {
             page: 1,
         };
 
-        const result = await connector(requestOptions, { path: '/starships' });
+        const result = await connector(requestOptions, { path: '/starships/' });
 
         expect(result).to.have.nested.property('rows');
         expect(result).to.have.nested.property('rows[0].name', 'Executor');
@@ -36,7 +36,7 @@ describe('#connector', function () {
             ],
         };
 
-        const result = await connector(requestOptions, { path: '/starships' });
+        const result = await connector(requestOptions, { path: '/starships/' });
 
         expect(result).to.have.nested.property('rows');
         expect(result).to.have.nested.property('rows[0].name', 'Executor');
