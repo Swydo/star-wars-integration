@@ -18,7 +18,7 @@
     "mocha": "8.3.2",
     "nock": "13.0.11",
     "nyc": "15.1.0",
-    "standard-version": "9.1.1"
+    "standard-version": "9.2.0"
   },
   "scripts": {
     "start": "custom-integrations start --tunnel",
