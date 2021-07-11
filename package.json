@@ -16,7 +16,7 @@
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-mocha-no-only": "1.1.1",
     "mocha": "9.0.2",
-    "nock": "13.0.11",
+    "nock": "13.1.1",
     "nyc": "15.1.0",
     "standard-version": "9.2.0"
   },
